@@ -242,14 +242,7 @@ class MainActionBar extends React.Component<Props, State> {
             {this.renderDates()}
           </FilterBox>
           <ClearFilter>
-            <Button
-              btnStyle="primary"
-              onClick={this.props.clearFilter}
-              block={true}
-              size="small"
-            >
-              {__('Clear filter')}
-            </Button>
+            <span onClick={this.props.clearFilter}>{__('Clear filter')}</span>
           </ClearFilter>
         </Popover>
       </Overlay>

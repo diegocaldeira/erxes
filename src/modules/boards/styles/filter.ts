@@ -99,6 +99,16 @@ const FilterBtn = styledTS<{ active?: boolean }>(styled.div)`
 
 const ClearFilter = styled.div`
   padding: 20px;
+
+  > span {
+    cursor: pointer;
+    color: ${colors.colorSecondary};
+    padding-left: 2px;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 `;
 
 const RemoveFilter = styled.span`
